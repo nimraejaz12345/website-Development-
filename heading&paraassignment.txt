@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BeaconhouseSchool<title>
+</head>
+
+<body>
+
+    <h1>BeaconhouseSchool</h1>
+
+    <p>Address: 123 Main Street, Cityville</p>
+    <p>Total Students Enrolled: 850/p>
+    <p>Programs Offered: Science, Commerce, Art</p>
+    <p>Educational Board: Interboard</p>
+
+</body>
+
+</html>
