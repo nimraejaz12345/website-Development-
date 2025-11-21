@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student description List</title>
+    </head>
+    <body>
+    
+        <h2>Student Information</h2>
+        
+        <dl>
+            <dt>ID:</dt>
+            <dd>Nimra</dd>
+            
+            <dt>ID:</dt>
+            <dd>2025-CS-123</dd>
+            
+            <dt>Address:</dt>
+            <dd>Street 12, Karachi</dd>
+            </dl>
+
+    </body>
+    </html>
