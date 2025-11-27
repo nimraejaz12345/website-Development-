@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My School Webpage</title>
+</head>
+
+<body>
+
+    <h1>Beaconhouse School</h1>
+    <p>Welcome to my school webpage. Here are some media items added using HTML.</p>
+
+    <!--Image-->
+    <h2>Our School Building</h2>
+    <img src="School.jpg" alt="School Image" width="300">
+
+    <!--Audio-->
+    <h2>Our School Anthem</h2>
+    <audio controls>
+        <source src="anthem.mp3" type="audio/mpeg">
+    </audio>
+
+    <!--Video-->
+    <h2>Campus Tour (Video) </h2>
+    <video width="320" height="240" controls>
+        <source src="tour.mp4" type="video/mp4">
+    </video>
+
+</body>
+
+</html>
