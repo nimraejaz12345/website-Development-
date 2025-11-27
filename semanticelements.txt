@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Webpage</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="">Home</a> |
+        <a href="">Gallery</a> |
+        <a href="">Contact</a>
+    </nav>
+
+    <section>
+        <h2>about This Page</h2>
+        <p>This is a simple webpage created using semantic HTML elements.</p>
+    </section>
+
+    <footer>
+        <p>2025 My Website</p>
+        </foorter>
+
+</body>
+
+</html>
