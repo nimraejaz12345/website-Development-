@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Activity</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: Arial;
+        }
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+        p {
+            color: darkblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hello this is me Nimra</h1>
+    <p>This is a page created by me.</p>
+
+</body>
+</html>
