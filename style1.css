@@ -1,0 +1,53 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color:blue;
+    color: blanchedalmond;
+}
+h1 {
+    color: blueviolet;
+
+}
+/*Attribute Selector */
+a{
+    color: brown;
+    text-decoration: wavy;
+
+}
+a:hover {
+    color: blue;
+
+}
+/*Sibling Selector*/
+h1 + p {
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+ul li:hover {
+    color: aquamarine;
+}
+/* :hover Pseudo-class */
+ul li:nth-child(3) {
+    background-color: bisque;
+
+}
+/* :not(selector) Pseudo-class */
+p:not(:first-of-type){
+    text-decoration: underline;
+}
+/*::before Pseudo-element */
+ul li::before {
+    content:"🚀";
+
+}
+/* ::after pseudo-element */
+a::after {
+    content:"🌌";
+
+}
+/* ::first-letter Pseudo-element */
+p::first-letter{
+    font-size: 200%;
+    color: chartreuse;
+}
