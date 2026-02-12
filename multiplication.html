@@ -2,27 +2,35 @@
 <html>
 
 <head>
-    <title>Multiply Three Numbers</title>
+    <title>Multiplication Project</title>
+    <script>
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+        function calculate() {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var result = multiply(a, b);
+            document.getElementById("output").innerHTML = "Result: " + result;
+        }
+    </script>
 </head>
 
 <body>
 
-    <h2>Multiplication of Three Numbers</h2>
+    <h2>Simple Multiplication Program</h2>
 
-    <script>
-        
-        function multiply(x, y, z) {
-            return x * y * z;
-        }
+    <label>Enter First Number:</label>
+    <input type="number" id="num1"><br><br>
 
-    
-        let x = 2;
-        let y = 2;
-        let z = 2;
+    <label>Enter Second Number:</label>
+    <input type="number" id="num2"><br><br>
 
-        
-        let result = multiply(x, y, z);
-        document.write("The multiplication result is: " + result);
-    </script>
-    </body>
-    </html>
+    <button onclick="calculate()">Multiply</button>
+
+    <p id="output"></p>
+
+</body>
+
+</html>
