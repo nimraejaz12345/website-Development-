@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Methods and Loops Project</title>
+</head>
+
+<body>
+
+    <h2>Methods and Loops Project</h2>
+
+    <p id="numbers"></p>
+    <p id="date"></p>
+    <p id="rounded"></p>
+
+    <script>
+        // Random set of numbers using loop
+        var nums = "";
+        for (var i = 1; i <= 5; i++) {
+            nums += Math.random() + "<br>";
+        }
+        document.getElementById("numbers").innerHTML = nums;
+
+        // Current date
+        document.getElementById("date").innerHTML = new Date();
+
+        // Rounded number
+        var rounded = Math.round(Math.random() * 100);
+        document.getElementById("rounded").innerHTML = "Rounded Number: " + rounded;
+    </script>
+
+</body>
+
+</html>
