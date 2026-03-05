@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h2>JavaScript Class</h2>
-        <p>How to use a JavaScript Class.</p>
 
-        <p id="student1"></p>
-        <p id="student2"></p>
+<head>
+    <title>Car Class Example</title>
+</head>
 
-        <script>
-            // Creating a class
-            class Student {
-                constructor(name, year) {
-                this.name = name;
-                this.year = year;
-                }
+<body>
 
-            // Age method 
-            age ()  {
-                let date = new Date();
-                return date.getFullYear() - this.year;
+    <h2>Car Information:</h2>
+    <div id="output"></div>
 
-             }
-          }
+    <script>
+        // Parent class
+        class Vehicle {
+            constructor(brand, color) {
+                this.brand = brand;
+                this.color = color;
+            }
 
-          //Using the class with teo  objects
-          const student1 = new Student("Riya", 2014);
-          document.getElementById("student1").innerHTML =
-          "My name is " + student1.name + ". I was born in " + student1.year + ". And my age is " + student1.age();
+            displayInfo() {
+                return "Brand: " + this.brand + ", Color: " + this.color;
+            }
 
-          const student2 = new Student("Tina", 2018);
-          document.getElementById("student2").innerHTML =
-          "My name is " + student2.name + ". I was born in " + student2.year + ".And my age is " + student2.age();
+            static vehicleType() {
+                return "This is a vehicle.";
+            }
+        }
 
+        // Child class inheriting Vehicle
+        class Car extends Vehicle {
+            constructor(brand, color, model, price) {
+                super(brand, color);
+                this.model = model;
+                this.price = price; // Price in Pakistani Rupees
+            }
 
-       </script>
-    </body>
+            displayCarInfo() {
+                return (
+                    "Brand: " + this.brand +
+                    ", Color: " + this.color +
+                    ", Model: " + this.model +
+                    ", Price: ₨" + this.price.toLocaleString()
+                );
+            }
+        }
+
+        // Using the classes
+        let outputDiv = document.getElementById("output");
+
+        outputDiv.innerHTML += Vehicle.vehicleType() + "<br>";
+
+        let myCar = new Car("Toyota", "White", "Corolla", 609000);
+        outputDiv.innerHTML += myCar.displayInfo() + "<br>";
+        outputDiv.innerHTML += myCar.displayCarInfo() + "<br>";
+    </script>
+
+</body>
+
 </html>
