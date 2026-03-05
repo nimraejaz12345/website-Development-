@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="pageTitle">My First Website</title>
+</head>
+
+<body>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <button onclick="showText()">Click Here</button>
+
+    <script>
+        function showText() {
+            let titleText = document.getElementById("pageTitle").textContent;
+            document.getElementById("p1").innerHTML = titleText;
+            document.getElementById("p2").innerHTML = titleText;
+        }
+    </script>
+
+</body>
+
+</html>
