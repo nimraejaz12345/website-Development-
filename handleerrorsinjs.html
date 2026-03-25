@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Try Catch Example</title>
+</head>
+
+<body>
+
+    <h2>Try Catch Demo</h2>
+    <button onclick="showError()">Click Me</button>
+
+    <p id="message"></p>
+
+    <script>
+        function showError() {
+            try {
+                let result = 10 / 0; // This will cause an error
+                document.getElementById("message").innerHTML = result;
+            } catch (error) {
+                document.getElementById("message").innerHTML = "Error: Something went wrong!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
