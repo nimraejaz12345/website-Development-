@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body style="text-align:center; font-family:Arial;">
+
+    <h3>Bank App</h3>
+
+    <input id="amt" type="number" placeholder="Amount">
+    <br><br>
+
+    <button onclick="add(1)">Income</button>
+    <button onclick="add(0)">Expense</button>
+
+    <h4>Balance: Rs <span id="bal">0</span></h4>
+
+    <script>
+        let b = 0;
+
+        function add(type) {
+            let a = Number(document.getElementById("amt").value);
+
+            if (type == 1) {
+                b += a;
+            } else {
+                b -= a;
+            }
+
+            document.getElementById("bal").innerText = b;
+        }
+    </script>
+
+</body>
+
+</html>
