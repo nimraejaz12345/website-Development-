@@ -2,10 +2,11 @@ body {
     font-family: 'Open Sans' ,sans-serif;
     background-color: aqua;
 }
+
 #container{
     width: 1000px;
     height: 550px;
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bglmg.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bgImg.jpg);
     margin: 20px auto;
 
 }
@@ -19,10 +20,30 @@ body {
     border-radius: 5px;
     box-shadow: 4px 8px 0 rgba(0, 0, 0, 0.2), 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 #result{
     height: 120px;
 
+
+
 }
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color:#919191;
+
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px;
+    font-size: 30px;
+}
+
 #keyboard{
     height: 400px;
 
@@ -54,3 +75,29 @@ body {
 .operaor:focus, .number:focus, .empty:focus{
     outline: 0;
 }
+
+button:nth-child(5){
+    font-size: 20px;
+    background-color: blue;
+}
+
+button:nth-child(9){
+    font-size: 20px;
+    background-color: rgb(116, 17, 155);
+}
+
+button:nth-child(13){
+    font-size: 20px;
+    background-color: rgb(152, 24, 84);
+}
+
+button:nth-child(17){
+    font-size: 20px;
+    background-color:rgb(170, 205, 28)
+}
+
+button:nth-child(21){
+    font-size: 20px;
+    background-color: rgb(238, 144, 255);
+}
+
