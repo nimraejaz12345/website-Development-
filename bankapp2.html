@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Bank App</title>
+</head>
+
+<body>
+
+    <h2>Bank App</h2>
+
+    <p>Balance: <span id="balance">0</span></p>
+
+    <input type="number" id="amount" placeholder="Enter amount">
+
+    <br><br>
+
+    <button onclick="addIncome()">Add Income</button>
+    <button onclick="addExpense()">Add Expense</button>
+
+    <script>
+        let balance = 0;
+
+        function updateBalance() {
+            document.getElementById("balance").innerText = balance;
+        }
+
+        function addIncome() {
+            let amount = Number(document.getElementById("amount").value);
+            balance += amount;
+            updateBalance();
+        }
+
+        function addExpense() {
+            let amount = Number(document.getElementById("amount").value);
+            balance -= amount;
+            updateBalance();
+        }
+    </script>
+
+</body>
+
+</html>
